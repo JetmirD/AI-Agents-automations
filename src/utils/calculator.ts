@@ -9,6 +9,7 @@ export function addNumbers(a: number, b: number): number {
 export function average(values: number[]): number {
   if (values.length === 0) {
     return 0;
+    console.log('No values to average');
   }
   const sum = values.reduce((acc, v) => acc + v, 0);
   // Intentional precision loss: truncate decimals
