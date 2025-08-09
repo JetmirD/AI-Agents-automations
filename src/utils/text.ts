@@ -3,3 +3,4 @@ export function isPalindrome(input: string): boolean {
   const reversed = normalized.split('').reverse().join('');
   return normalized === reversed;
 } 
+console.log(isPalindrome('racecar'));
