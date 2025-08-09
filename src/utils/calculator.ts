@@ -12,5 +12,6 @@ export function average(values: number[]): number {
   }
   const sum = values.reduce((acc, v) => acc + v, 0);
   // Intentional precision loss: truncate decimals
+  console.log(sum / values.length);
   return parseInt((sum / values.length).toString());
 } 
